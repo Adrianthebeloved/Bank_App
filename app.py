@@ -44,15 +44,12 @@ while True:
         print('Successful')
         time.sleep(1)
         
-        #create a new key value pair for the account in the dictionary. 
         data[acc_num] = {
             'name' : f"{f_name} {l_name}",
             'pin' : pin,
             'trans_pin' : trans_pin,
             'bal' :0,
         }
-        
-        #print success message
         print(f"""\nWelcome, {f_name}!\nYou have successfully created your Customer account.\nYour account number is {acc_num}.""")
         
     elif user_input == "2":
@@ -61,18 +58,17 @@ while True:
         print("\nPlease enter your secure login pin.")
         pin = input('Login Pin:\n>')
         
-        #verify that the user exists in the dictionary.
         user_data = data.get(acc_num)
         
-        #check that the user data does not return none and that the pin is correct.
         if user_data and user_data.get("pin") == pin:
             print("Login Successful")
-            first_login = True #set the first login value to True
+            first_login = True 
             while True:
                 if first_login:
                     print(f"Welcome, {user_data['name'].split()[0].title()}")
-                    first_login = False #set the value to false to give proper welcome back message.
+                    first_login = False 
                 else:
+                    print("*"*31)
                     print(f"Welcome back, {user_data['name'].split()[0].capitalize()}")
                 
                 print("What would you like to do?\n1. Withdraw.\n2. Deposit.\n3. Transfer.\n4. Check Balance\n5. Logout")
@@ -85,12 +81,11 @@ while True:
                     else:
                         trans_pin = input("Transaction Pin:\n>")
                         if trans_pin == user_data['trans_pin']:
-                            try:
                                 new_bal = withdraw(amount, user_data['bal'])
                                 user_data['bal'] = new_bal
                                 print(f'Your withdrawal of {amount} naira was successful')
-                            except ValueError as msg:
-                                print(msg)
+                        else:
+                            print("Incorrect Transaction pin")
                 elif input_ == "2":
                     print('Enter Deposit amount')
                     amount = float(input("::>"))
@@ -112,9 +107,9 @@ while True:
                             print("Insufficient Funds")
                         else:   
                             if trans_pin == user_data['trans_pin']:
-                                user_data['bal'] -= trans_amount #take money out of the sender's aza
+                                user_data['bal'] -= trans_amount 
                       
-                                beneficiary['bal'] += trans_amount #put the money into the receiver's acc.
+                                beneficiary['bal'] += trans_amount 
                       
                                 print("\nTransfer Successful")
                             else:

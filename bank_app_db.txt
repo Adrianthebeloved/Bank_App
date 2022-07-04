@@ -1,1 +1,1 @@
-{'0987124940': {'name': 'Anthony Oliko', 'pin': '1234', 'trans_pin': '5678', 'bal': 110.0}, '0501527968': {'name': 'Adrian Oliko', 'pin': '1234', 'trans_pin': '5678', 'bal': 9650.0}}
+{'0987124940': {'name': 'Anthony Oliko', 'pin': '1234', 'trans_pin': '5678', 'bal': 570.0}, '0501527968': {'name': 'Adrian Oliko', 'pin': '1234', 'trans_pin': '5678', 'bal': 880.0}}
