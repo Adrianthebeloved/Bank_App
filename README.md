@@ -2,17 +2,18 @@
 
 ## Project Brief- Backend Developers 
 
-Write a Python program that allows customers to: 
-a. `Create` an account with the account number generated if they do not have an account. All generated account numbers should begin with 0 b. Log in to the program if they have an account 
-c. `Deposit` money 
-d. `Withdraw` money from the account if they have a sufficient amount. e. Users should be able to `transfer` money to other users in the account 
-f. Users should be able to `check` their account balances.
-
-The program should keep running until the user decides to make it log out and/or quit. 
-The account data should be stored in a dictionary that looks like this:
+Write a Python program that allows customers to:
+- `Create` an account with the account number generated if they do not have an account. All generated account numbers should begin with 0
+- Log in to the program if they have an account 
+- `Deposit` money 
+- `Withdraw` money from the account if they have a sufficient amount.
+- Users should be able to `transfer` money to other users in the account.
+- Users should be able to `check` their account balances.
+- The program should keep running until the user decides to make it log out and/or quit. 
+- The account data should be stored in a dictionary that looks like this:
 
 ```json
-data = { 
+data = {
 "0123445677" : { 
 "first_name":"John", 
 "last_name" : "Doe ", 
