@@ -41,7 +41,7 @@ for persistence
 
 ### Documentation
 
-The project makes use of the following functions:
+The project makes use of Pythons Data Structures, Algorithms, Methods and makes use of the following functions:
 
 `def deposit()`
 
@@ -53,4 +53,4 @@ The project makes use of the following functions:
 
 `def account_num()`
 
-- To generate a random account number starting with '0' 
+- To generate a random account number starting with '0'
