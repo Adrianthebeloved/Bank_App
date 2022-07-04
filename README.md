@@ -13,12 +13,12 @@ The account data should be stored in a dictionary that looks like this:
 
 ```json
 data = { 
-- "0123445677" : { 
-- "first_name":"John", 
-- "last_name" : "Doe ", 
-- "login_pin" : "8424",
-- "transaction_pin" : "0934", 
-- "balance" : 0 }
+"0123445677" : { 
+"first_name":"John", 
+"last_name" : "Doe ", 
+"login_pin" : "8424",
+"transaction_pin" : "0934", 
+"balance" : 0 }
 }
 ```
 ### Install Dependencies
@@ -30,15 +30,12 @@ data = {
 ### Set up Storage for Persistence
 
 The dictionary which contains users details is stored in a .txt file. So navigate to your project folder and create a .txt file containing an empty dictionary.
-```json
-with open('bank_app_db.txt', 'r') as file:
-    data = eval(file.read())
-```
+
+`with open('bank_app_db.txt', 'r') as file:data = eval(file.read())`
 and
-```json
-with open('bank_app_db.txt', 'w') as file:
-    file.write(str(data))
-```
+
+`with open('bank_app_db.txt', 'w') as file:file.write(str(data))`
+
 for persistence
 
 ### Documentation
