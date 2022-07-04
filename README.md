@@ -13,7 +13,7 @@ Write a Python program that allows customers to:
 - The account data should be stored in a dictionary that looks like this:
 
 ```json
-data = {
+{
 "0123445677" : { 
 "first_name":"John", 
 "last_name" : "Doe ", 
@@ -30,7 +30,7 @@ data = {
 
 ### Set up Storage for Persistence
 
-The dictionary which contains users details is stored in a .txt file. So navigate to your project folder and create a .txt file containing an empty dictionary.
+The dictionary which contains users details is stored in a `.txt file`. Navigate to your project folder and create a .txt file containing an empty dictionary.
 
 `with open('bank_app_db.txt', 'r') as file:data = eval(file.read())`
 and
