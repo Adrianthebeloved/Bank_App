@@ -1,6 +1,6 @@
 # Skillup Africa Beneficiary Challenge
 
-## Project Brief- Backend Developers 
+## Project Brief
 
 Write a Python program that allows customers to:
 - `Create` an account with the account number generated if they do not have an account. All generated account numbers should begin with 0
